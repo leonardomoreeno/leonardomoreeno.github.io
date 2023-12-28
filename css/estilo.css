@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "PlusJakarta";
+    src: url(../font/PlusJakartaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "PlusJakartaBold";
+    src: url(../font/PlusJakartaSans-Bold.ttf);
+}
+
+body {
+    font-family: PlusJakarta;
+}
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+.header {
+    width: 100%;
+    position: fixed;
+    height: 127px !important;
+    z-index: 999;
+    background-color: #192437;
+    justify-content: space-between;
+    padding: 0 16%;
+    height: 5.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-top: 29px;
+}
+
+.navbar-nav {
+    font-size: 25px;
+    padding-left: 5em;
+}
+
+img.logo {
+    width: 10%;
+}
+
+a.nav-link {
+    color: #E4BD6E !important;
+}
+
+a.nav-link:hover {
+    color: white !important;
+}
+
+button.botaomenu {
+    border: solid 2px;
+    margin-top: 6px;
+    font-family: 'PlusJakartaBold';
+    font-size: 25px;
+    border-radius: 9px;
+    width: 300px;
+    background-color: #192437;
+    color: #E4BD6E;
+    transition: 0.7s;
+}
+
+button.botaomenu:hover {
+    background-color: white;
+    color: #192437;
+    transition: 0.7s;
+}
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+
+/* BANNER */
+/* BANNER */
+/* BANNER */
+
+section.ban {
+    padding-top: 126px;
+}
+
+.banner {
+    height: 667px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+p.titulobanner {
+    line-height: 1;
+    font-size: 39px;
+    font-family: PlusJakartaBold;
+    padding-top: 8em;
+}
+
+span.subtitulobanner {
+    font-size: 22px;
+    font-family: PlusJakarta;
+}
+
+img.whatsbanner {
+    width: 10%;
+}
+
+button.botaobanner {
+    margin-top: 25px;
+    font-family: 'PlusJakartaBold';
+    font-size: 28px;
+    border-radius: 9px;
+    width: 80%;
+    background-color: #192437;
+    color: #E4BD6E;
+}
+
+button.botaobanner:hover {
+    margin-top: 25px;
+    font-family: 'PlusJakartaBold';
+    font-size: 28px;
+    border-radius: 9px;
+    width: 80%;
+    background-color: white;
+    color: #192437;
+    transition: 0.3s;
+}
+
+
+/* BANNER */
+/* BANNER */
+/* BANNER */
+
+
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+
+section.conteudo {
+    margin-top: 2em;
+}
+
+p.texto {
+    font-size: 29px;
+}
+
+img.adv {
+    width: 79%;
+}
+
+img.icons {
+    width: 36%;
+}
+
+p.titulosection.text-center {
+    font-family: 'PlusJakartaBold';
+    font-size: 40px;
+}
+
+p.titulosection {
+    font-family: 'PlusJakartaBold';
+    font-size: 40px;
+}
+
+p.texto2.text-center {
+    font-size: 18px;
+}
+
+span.titulotopic {
+    font-family: 'PlusJakartaBold';
+}
+
+section.conteudo.alt {
+    height: 450px;
+    background-image: url(../img/section1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.row.sobre {
+    padding-top: 30px;
+}
+
+p.titulosection2 {
+    font-family: 'PlusJakartaBold';
+    font-size: 40px;
+    color: white;
+}
+
+p.texto2.aos-init.aos-animate {
+    color: white;
+    font-size: 25px;
+}
+
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+
+.footer-area {
+    background-color: #192437;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+}
+
+.socialmedia-group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.socialmedia-group a {
+    text-align: center;
+    background-color: white;
+    border-radius: 72px;
+    color: #192437;
+    font-size: 2.4rem;
+    height: 72px;
+    padding: 0.5rem;
+    width: 72px;
+}
+
+.logo-deusa-slot {
+    width: 180px;
+}
+
+.logo-deusa-slot img {
+    width: 100%;
+}
+
+.content-replacement-justify {
+    justify-content: space-between;
+    display: flex;
+}
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+
+@media screen and (max-width: 425px) {
+    .navbar-nav {
+        font-size: 25px;
+        padding-left: 2em;
+    }
+    div#navbarNavAltMarkup {
+        background-color: #192437;
+    }
+    img.logo {
+        width: 55%;
+    }
+    button.botaomenu {       
+        margin-top: 32px;        
+    }
+}
