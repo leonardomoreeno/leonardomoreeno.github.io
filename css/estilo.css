@@ -10,7 +10,7 @@
 
 body {
     font-family: PlusJakarta;
-    background-color: #1e1d1d;
+    background-color: #080808;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,7 +30,7 @@ body {
     position: fixed;
     height: 127px !important;
     z-index: 999;
-    background-color: #1e1d1d;
+    background-color: #080808;
     justify-content: space-between;
     padding: 0 16%;
     height: 5.5em;
