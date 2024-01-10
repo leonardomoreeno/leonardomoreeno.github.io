@@ -465,14 +465,14 @@ section#contatos {
     }
 }
 
-@media (max-width: 1440px) { 
+@media (min-width: 1024px) and (max-width: 1440px) { 
     .navbar-nav {
         font-size: 18px;
         padding-left: 5em;
     }
 }
 
-@media (max-width: 1024px) { 
+@media (min-width: 769px) and (max-width: 1024px) { 
     button.botaomenu {        
         font-size: 19px;        
         width: 202px;
@@ -488,4 +488,29 @@ section#contatos {
     button.botaobanner {        
         width: 46%;        
     }    
+}
+
+@media (min-width: 426px) and (max-width: 768px) { 
+    button.botaobanner {        
+        width: 84%;        
+    }
+    img.fotobanner {       
+        width: 95%;
+    }
+    p.titulobanner {        
+        padding-top: 5em;        
+    }
+    section.conteudo {
+        margin-top: 0em;
+    }
+    .box {        
+        width: 35%;     
+    }
+    a.linkprojects {
+        font-size: 21px;        
+    }
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }
