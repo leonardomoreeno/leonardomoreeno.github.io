@@ -1,0 +1,491 @@
+@font-face {
+    font-family: "PlusJakarta";
+    src: url(../font/PlusJakartaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "PlusJakartaBold";
+    src: url(../font/PlusJakartaSans-Bold.ttf);
+}
+
+body {
+    font-family: PlusJakarta;
+    background-color: #1e1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7ED957;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+.header {
+    width: 100%;
+    position: fixed;
+    height: 127px !important;
+    z-index: 999;
+    background-color: #1e1d1d;
+    justify-content: space-between;
+    padding: 0 16%;
+    height: 5.5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+    border-bottom: solid 1px #7ED957;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-top: 29px;
+}
+
+.navbar-nav {
+    font-size: 25px;
+    padding-left: 5em;
+}
+
+img.logo {
+    width: 10%;
+}
+
+a.nav-link {
+    color: #7ED957 !important;
+}
+
+a.nav-link:hover {
+    color: white !important;
+}
+
+button.botaomenu {
+    border: solid 2px;
+    margin-top: 6px;
+    font-family: 'PlusJakartaBold';
+    font-size: 25px;
+    border-radius: 9px;
+    width: 300px;
+    background-color: #7ED957;
+    color: #121212;
+    transition: 0.7s;
+}
+
+button.botaomenu:hover {
+    background-color: white;
+    color: #192437;
+    transition: 0.7s;
+}
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+
+/* BANNER */
+/* BANNER */
+/* BANNER */
+
+section.ban {
+    padding-top: 126px;
+}
+
+.banner {
+    height: 667px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+p.titulobanner {
+    line-height: 1;
+    font-size: 39px;
+    font-family: PlusJakartaBold;
+    padding-top: 8em;
+    color: white;
+}
+
+span.subtitulobanner {
+    font-size: 22px;
+    font-family: PlusJakarta;
+    color: #7ED957;
+}
+
+a.cont {
+    color: #7ED957;
+    text-decoration: none;
+}
+
+img.whatsbanner {
+    width: 10%;
+}
+
+button.botaobanner {
+    margin-right: 13px;
+    padding: 4px;
+    margin-top: 25px;
+    font-family: 'PlusJakartaBold';
+    font-size: 19px;
+    border-radius: 10px;
+    width: 29%;
+    color: #7ED957;
+    background-color: transparent;
+    border: 0.1rem solid #7ED957;
+    transition: 0.3s;
+}
+
+button.botaobanner:hover {
+    padding: 4px;
+    margin-top: 25px;
+    font-family: 'PlusJakartaBold';
+    font-size: 19px;
+    border-radius: 10px;
+    width: 29%;
+    background-color: white;
+    color: #192437;
+    scale: 0.9;
+    transition: 0.3s;
+}
+
+img.fotobanner {
+    margin-top: 10rem;
+    transition: 0.3s;
+    width: 70%;
+}
+
+img.fotobanner:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+
+/* BANNER */
+/* BANNER */
+/* BANNER */
+
+
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+
+[data-aos][data-aos][data-aos-duration="400"],
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .9s !important;
+}
+
+p.sobremimtext {
+    text-align: center;
+    color: white;
+    font-size: 27px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    place-content: center;
+}
+
+.cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    place-content: center;
+}
+
+a.linkprojects {
+    text-decoration: none;
+    color: white;
+    border: solid 1px #7ED957;
+    padding: 11px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.row.text-center.proj2 {
+    margin-top: 4rem;
+}
+
+img.iconskill {
+    width: 25%;
+}
+
+img.iconproject {
+    border-radius: 10px;
+    border-bottom: solid 4px #7ED957;
+    transition: 0.3s;
+    width: 95%;
+}
+
+.col-md-4 {
+    margin-bottom: 36px;
+}
+
+img.iconproject:hover {
+    scale: 0.9;
+    transition: 0.3s;
+    border-radius: 10px;
+    border-bottom: solid 4px #7ED957;
+}
+
+.box {
+    border-bottom: solid 4px #7ED957;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: #373737;
+    color: white;
+    text-align: center;
+    width: 14%;
+    transition: 0.3s;
+}
+
+.box2 {
+    border-bottom: solid 4px #7ED957;
+    border-radius: 10px;
+    padding: 60px;
+    background-color: #373737;
+    color: white;
+    text-align: center;
+    width: 29%;
+    transition: 0.3s;
+}
+
+.box:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+section.conteudo {
+    margin-top: 8em;
+}
+
+p.texto {
+    font-size: 29px;
+}
+
+img.adv {
+    width: 79%;
+}
+
+img.icons {
+    width: 36%;
+}
+
+p.titulosection.text-center {
+    font-family: 'PlusJakartaBold';
+    font-size: 40px;
+    color: white;
+}
+
+p.titulosection {
+    font-family: 'PlusJakartaBold';
+    font-size: 40px;
+}
+
+p.texto2.text-center {
+    font-size: 18px;
+}
+
+span.titulotopic {
+    font-family: 'PlusJakartaBold';
+}
+
+section.conteudo.alt {
+    height: 450px;
+    background-image: url(../img/section1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.row.sobre {
+    padding-top: 30px;
+}
+
+p.titulosection2 {
+    font-family: 'PlusJakartaBold';
+    font-size: 40px;
+    color: white;
+}
+
+p.texto2.aos-init.aos-animate {
+    color: white;
+    font-size: 25px;
+}
+
+section#contatos {
+    margin-bottom: 5rem;
+}
+
+.content-replacement-justify {
+    place-content: center!important;
+    /* justify-content: space-between; */    
+}
+
+.socialmedia-group a {    
+    color: #1e1d1d;
+    transition: 0.3s;    
+}
+
+.socialmedia-group a:hover {    
+    scale: 1.1;
+    transition: 0.3s;    
+}
+
+
+
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+/* SECTION CONTEUDO */
+
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+
+.footer-area {
+    background-color: #192437;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+}
+
+.socialmedia-group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.socialmedia-group a {
+    text-align: center;
+    background-color: white;
+    border-radius: 72px;
+    color: #192437;
+    font-size: 2.4rem;
+    height: 72px;
+    padding: 0.5rem;
+    width: 72px;
+}
+
+.logo-lmr-slot {
+    width: 180px;
+}
+
+.logo-lmr-slot img {
+    width: 100%;
+}
+
+.content-replacement-justify {
+    justify-content: space-between;
+    display: flex;
+}
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+
+@media screen and (max-width: 425px) {
+    .navbar-nav {
+        font-size: 25px;
+        padding-left: 2em;
+    }
+
+    div#navbarNavAltMarkup {
+        background-color: #192437;
+    }
+
+    img.logo {
+        width: 55%;
+    }
+
+    button.botaomenu {
+        margin-top: 32px;
+        display: none;
+    }
+
+    .box {
+        width: 35%;
+    }
+
+    .logo-lmr-slot img {
+        padding-top: 13px;
+        padding-left: 25px;
+        width: 80%;
+    }
+
+    button.botaobanner {
+        place-content: center;
+        width: 61%;
+        display: flex;
+    }
+    button.botaobanner:hover {        
+        width: 61%;        
+    }
+    a.cont {
+        text-align: -webkit-center;        
+    }
+    img.fotobanner {
+        margin-top: 2rem;
+    }
+
+    p.titulobanner {
+        padding-top: 2em;
+    }
+
+    section.conteudo {
+        margin-top: 3em;
+    }
+
+    .banner {
+        height: 588px;
+    }
+
+    .row.intro {
+        text-align-last: center;
+    }
+
+    a.linkprojects {
+        font-size: 13px;
+    }
+
+    .row.text-center.proj2 {
+        margin-top: 0rem;
+    }
+    .container-fluid {
+        text-align-last: center!important;
+        display: inline-block!important;        
+    }
+    button.navbar-toggler {
+        display: none;
+    }
+    .content-replacement-justify {
+        place-content: center;
+    }
+}
+
+@media (max-width: 1440px) { 
+    .navbar-nav {
+        font-size: 18px;
+        padding-left: 5em;
+    }
+}
+
+@media (max-width: 1024px) { 
+    button.botaomenu {        
+        font-size: 19px;        
+        width: 202px;
+        margin-right: -71px;        
+    }
+    .navbar-nav {
+        font-size: 15px;
+        padding-left: 5em;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light {
+        padding-top: 3rem;
+    }
+    button.botaobanner {        
+        width: 46%;        
+    }    
+}
