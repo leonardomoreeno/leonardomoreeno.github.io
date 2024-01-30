@@ -465,7 +465,7 @@ section#contatos {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) { 
+@media (min-width: 1025px) and (max-width: 1440px) { 
     .navbar-nav {
         font-size: 13px;
         padding-left: 4em;
@@ -475,10 +475,22 @@ section#contatos {
     }
     .header {       
         padding: 0 7%;        
+    }
+    button.botaobanner {       
+        width: 46%;       
+    }
+    section.conteudo {
+        margin-top: 7em;
+    }
+    a.linkprojects {
+        font-size: 11px;        
+    }
+    .banner {
+        height: 468px;        
     }    
 }
 
-@media (min-width: 769px) and (max-width: 1024px) { 
+@media (min-width: 768px) and (max-width: 1024px) { 
     button.botaomenu {        
         font-size: 19px;        
         width: 202px;
@@ -492,32 +504,82 @@ section#contatos {
         padding-top: 3rem;
     }
     button.botaobanner {        
-        width: 46%;        
+        width: 82%;      
+    }    
+    p.titulobanner {        
+        padding-top: 4em;
+        font-size: 36px;       
+    }
+    img.fotobanner {
+        margin-top: 8rem;        
+        width: 100%;
+    }
+    section.conteudo {
+        margin-top: 7rem; 
+    }
+    .box {        
+        width: 29%;        
+    }
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 49.333333%;
+    }
+    .banner {
+        height: 407px;        
+    }
+    a.linkprojects {
+        font-size: 12px;        
     }    
 }
 
-@media (min-width: 426px) and (max-width: 768px) { 
+@media (min-width: 426px) and (max-width: 767px) {
+    button.navbar-toggler {
+        display: none;
+    }
+    .container-fluid {
+        place-content: center!important;
+    }
+    .col-md-6 {
+        text-align: -webkit-center;
+    }
+    button.botaomenu {
+        display: none;
+    }
+    img.logo {
+        width: 34%;
+    }    
     button.botaobanner {        
         width: 84%;        
     }
     img.fotobanner {       
         width: 95%;
     }
-    p.titulobanner {        
-        padding-top: 5em;        
+    p.titulobanner {
+        text-align: -webkit-center;        
+        padding-top: 2em;       
+    }
+    img.fotobanner {
+        margin-top: 3rem;        
     }
     section.conteudo {
-        margin-top: 0em;
+        margin-top: 8em;
     }
     .box {        
         width: 35%;     
     }
     a.linkprojects {
-        font-size: 21px;        
+        font-size: 13px;       
     }
     .col-md-4 {
         flex: 0 0 auto;
         width: 100%;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 360px){
+    p.titulobanner {
+        text-align: -webkit-center;
     }
 }
 
