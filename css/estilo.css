@@ -465,6 +465,17 @@ section#contatos {
     }
 }
 
+@media (min-width: 1441px) and (max-width: 1700px) { 
+    .navbar-nav {
+        font-size: 20px;
+        padding-left: 4em;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light {
+        padding-top: 37px;
+    }
+}
+
+
 @media (min-width: 1025px) and (max-width: 1440px) { 
     .navbar-nav {
         font-size: 13px;
