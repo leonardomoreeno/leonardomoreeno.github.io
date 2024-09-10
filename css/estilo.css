@@ -51,6 +51,8 @@ img.logo {
     width: 10%;
 }
 
+
+
 a.nav-link {
     color: #7ED957 !important;
 }
@@ -147,15 +149,28 @@ button.botaobanner:hover {
     transition: 0.3s;
 }
 
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
 img.fotobanner {
     margin-top: 10rem;
     transition: 0.3s;
     width: 70%;
+    display: block;    
+    transition: transform 0.3s ease;
 }
+
 
 img.fotobanner:hover {
     scale: 1.1;
     transition: 0.3s;
+}
+
+.col-md-6.imgleo {
+    text-align: -webkit-center;
 }
 
 

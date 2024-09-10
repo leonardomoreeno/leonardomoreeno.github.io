@@ -53,8 +53,8 @@
                                 class="botaobanner">Entre em
                                 contato</button></a>
                     </div>
-                    <div class="col-md-6">
-                        <img class="fotobanner" src="img/lmr.png">
+                    <div class="col-md-6 imgleo">
+                        <img class="fotobanner image-container" src="img/lmr.png">
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                         <div class="box">
                             Node.js<br>
                             <img class="iconskill" src="img/skills/nodejs.png">
-                        </div>                        
+                        </div>
                         <div class="box">
                             HTML<br>
                             <img class="iconskill" src="img/skills/html.png">
@@ -112,7 +112,7 @@
                         <div class="box">
                             Bootstrap<br>
                             <img class="iconskill" src="img/skills/bs.png">
-                        </div>                        
+                        </div>
                         <div class="box">
                             Sass<br>
                             <img class="iconskill" src="img/skills/sass.png">
@@ -165,11 +165,13 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto5.png"><br><br>
-                        <a class="linkprojects" href="https://advdeuzeliacampos.com.br/" target="_blank">Dra Deuzélia Campos</a>
+                        <a class="linkprojects" href="https://advdeuzeliacampos.com.br/" target="_blank">Dra Deuzélia
+                            Campos</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/gmlima.png"><br><br>
-                        <a class="linkprojects" href="https://guilhermelimapersonal.vercel.app" target="_blank">Guilherme Lima Assessoria</a>
+                        <a class="linkprojects" href="https://guilhermelimapersonal.vercel.app"
+                            target="_blank">Guilherme Lima Assessoria</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/filmeslmr.png"><br><br>
@@ -177,15 +179,18 @@
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto11.png"><br><br>
-                        <a class="linkprojects" href="https://clonestarpluslmr.vercel.app/" target="_blank">Clone Star+</a>
+                        <a class="linkprojects" href="https://clonestarpluslmr.vercel.app/" target="_blank">Clone
+                            Star+</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/calculadora.png"><br><br>
-                        <a class="linkprojects" href="https://calculadoralmr.vercel.app" target="_blank">Calculadora v0.1</a>
+                        <a class="linkprojects" href="https://calculadoralmr.vercel.app" target="_blank">Calculadora
+                            v0.1</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto10.png"><br><br>
-                        <a class="linkprojects" href="https://leonardomoreeno.github.io/loginfrontend/" target="_blank">Login Front-End</a>
+                        <a class="linkprojects" href="https://leonardomoreeno.github.io/loginfrontend/"
+                            target="_blank">Login Front-End</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/buscarcep.png"><br><br>
@@ -204,22 +209,22 @@
                             target="_blank">Relatório
                             Anual CASSI
                             2021</a>
-                    </div>                                                                                
-                </div>                
+                    </div>
+                </div>
                 <div class="row text-center proj2">
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto2.png"><br><br>
                         <a class="linkprojects" href="https://planos.cassi.com.br/cassivida/brasilia.html"
                             target="_blank">CASSI Vida - Regional</a>
-                    </div> 
+                    </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto6.png"><br><br>
                         <a class="linkprojects" href="#" target="_blank">Outubro Rosa CASSI 2021 - Despublicado</a>
-                    </div>                    
+                    </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto4.png"><br><br>
                         <a class="linkprojects" href="#" target="_blank">LP Hamburgueria - Em Desenvolvimento</a>
-                    </div>                                      
+                    </div>
                 </div>
                 <div class="row text-center proj2">
                     <div class="col-md-4">
@@ -228,9 +233,9 @@
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto8.png"><br><br>
-                        <a class="linkprojects" href="#"
-                            target="_blank">Landing Page Móveis Planejados - Não publicada</a>
-                    </div>                      
+                        <a class="linkprojects" href="#" target="_blank">Landing Page Móveis Planejados - Não
+                            publicada</a>
+                    </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto9.png"><br><br>
                         <a class="linkprojects" href="#" target="_blank">Site de Exportação - Não publicado</a>
@@ -252,8 +257,9 @@
                                     class="fa-brands fa-instagram"></i></a>
                             <a href="mailto:leonardo.morenodev@gmail.com" target="_blank"><i
                                     class="fa-brands fa-google"></i></a>
-                            <a href="https://wa.me/5561986569890" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        </div>                        
+                            <a href="https://wa.me/5561986569890" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,6 +268,26 @@
 </body>
 <script>
     AOS.init();
+
+    const image = document.querySelector('.fotobanner');
+    const container = document.querySelector('.image-container');
+
+    container.addEventListener('mousemove', (e) => {
+        const { offsetX: x, offsetY: y } = e;
+        const { offsetWidth: w, offsetHeight: h } = container;
+
+        // Calcular o percentual do mouse em relação à imagem
+        const xPercent = (x / w) * 2 - 1; // Normalizado entre -1 e 1
+        const yPercent = (y / h) * 2 - 1; // Normalizado entre -1 e 1
+
+        // Ajustar a transformação da imagem com base na posição do mouse
+        image.style.transform = `translate(${xPercent * 10}px, ${yPercent * 10}px)`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        image.style.transform = 'translate(0, 0)';
+    });
+    
 </script>
 <script src="js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/d304fbb7ae.js" crossorigin="anonymous"></script>
