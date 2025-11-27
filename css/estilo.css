@@ -99,7 +99,7 @@ section.ban {
     background-position: center;
 }
 
-p.titulobanner {
+.titulobanner {
     line-height: 1;
     font-size: 39px;
     font-family: PlusJakartaBold;
@@ -155,16 +155,16 @@ button.botaobanner:hover {
     display: inline-block;
 }
 
-img.fotobanner {
-    margin-top: 10rem;
+.fotobanner {
+    margin-top: 5rem;
     transition: 0.3s;
     width: 70%;
-    display: block;    
+    display: block;
     transition: transform 0.3s ease;
 }
 
 
-img.fotobanner:hover {
+.fotobanner:hover {
     scale: 1.1;
     transition: 0.3s;
 }
@@ -335,18 +335,18 @@ section#contatos {
 }
 
 .content-replacement-justify {
-    place-content: center!important;
-    /* justify-content: space-between; */    
+    place-content: center !important;
+    /* justify-content: space-between; */
 }
 
-.socialmedia-group a {    
+.socialmedia-group a {
     color: #1e1d1d;
-    transition: 0.3s;    
+    transition: 0.3s;
 }
 
-.socialmedia-group a:hover {    
+.socialmedia-group a:hover {
     scale: 1.1;
-    transition: 0.3s;    
+    transition: 0.3s;
 }
 
 
@@ -422,6 +422,11 @@ section#contatos {
 
     .box {
         width: 35%;
+        font-size: 12px;
+    }
+
+    .titulosection.text-center {
+        margin-top: 25px;
     }
 
     .logo-lmr-slot img {
@@ -435,17 +440,20 @@ section#contatos {
         width: 61%;
         display: flex;
     }
-    button.botaobanner:hover {        
-        width: 61%;        
+
+    button.botaobanner:hover {
+        width: 61%;
     }
+
     a.cont {
-        text-align: -webkit-center;        
+        text-align: -webkit-center;
     }
+
     img.fotobanner {
         margin-top: 2rem;
     }
 
-    p.titulobanner {
+    .titulobanner {
         padding-top: 2em;
     }
 
@@ -468,134 +476,166 @@ section#contatos {
     .row.text-center.proj2 {
         margin-top: 0rem;
     }
+
     .container-fluid {
-        text-align-last: center!important;
-        display: inline-block!important;        
+        text-align-last: center !important;
+        display: inline-block !important;
     }
+
     button.navbar-toggler {
         display: none;
     }
+
     .content-replacement-justify {
         place-content: center;
     }
 }
 
-@media (min-width: 1441px) and (max-width: 1700px) { 
+@media (min-width: 1441px) and (max-width: 1700px) {
     .navbar-nav {
         font-size: 20px;
         padding-left: 4em;
     }
+
     nav.navbar.navbar-expand-lg.navbar-light {
         padding-top: 37px;
     }
 }
 
 
-@media (min-width: 1025px) and (max-width: 1440px) { 
+@media (min-width: 1025px) and (max-width: 1440px) {
     .navbar-nav {
         font-size: 13px;
         padding-left: 4em;
     }
+
     nav.navbar.navbar-expand-lg.navbar-light {
         padding-top: 2rem;
     }
-    .header {       
-        padding: 0 7%;        
+
+    .header {
+        padding: 0 7%;
     }
-    button.botaobanner {       
-        width: 46%;       
+
+    button.botaobanner {
+        width: 46%;
     }
+
     section.conteudo {
         margin-top: 7em;
     }
+
     a.linkprojects {
-        font-size: 11px;        
+        font-size: 11px;
     }
+
     .banner {
-        height: 468px;        
-    }    
+        height: 468px;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) { 
-    button.botaomenu {        
-        font-size: 19px;        
+@media (min-width: 768px) and (max-width: 1024px) {
+    button.botaomenu {
+        font-size: 19px;
         width: 202px;
-        margin-right: -71px;        
+        margin-right: -71px;
     }
+
     .navbar-nav {
         font-size: 15px;
         padding-left: 5em;
     }
+
     nav.navbar.navbar-expand-lg.navbar-light {
         padding-top: 3rem;
     }
-    button.botaobanner {        
-        width: 82%;      
-    }    
-    p.titulobanner {        
-        padding-top: 4em;
-        font-size: 36px;       
+
+    button.botaobanner {
+        width: 82%;
     }
+
+    .titulobanner {
+        padding-top: 4em;
+        font-size: 36px;
+    }
+
     img.fotobanner {
-        margin-top: 8rem;        
+        margin-top: 8rem;
         width: 100%;
     }
+
     section.conteudo {
-        margin-top: 7rem; 
+        margin-top: 7rem;
     }
-    .box {        
-        width: 29%;        
+
+    .box {
+        width: 29%;
     }
+
     .col-md-4 {
         flex: 0 0 auto;
         width: 49.333333%;
     }
+
     .banner {
-        height: 407px;        
+        height: 407px;
     }
+
     a.linkprojects {
-        font-size: 12px;        
-    }    
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 767px) {
     button.navbar-toggler {
         display: none;
     }
+
     .container-fluid {
-        place-content: center!important;
+        place-content: center !important;
     }
+
     .col-md-6 {
         text-align: -webkit-center;
     }
+
     button.botaomenu {
         display: none;
     }
+
     img.logo {
         width: 34%;
-    }    
-    button.botaobanner {        
-        width: 84%;        
     }
-    img.fotobanner {       
+
+    button.botaobanner {
+        width: 84%;
+    }
+
+    img.fotobanner {
         width: 95%;
     }
-    p.titulobanner {
-        text-align: -webkit-center;        
-        padding-top: 2em;       
+
+    .titulobanner {
+        text-align: -webkit-center;
+        padding-top: 2em;
     }
+
     img.fotobanner {
-        margin-top: 3rem;        
+        margin-top: 3rem;
     }
+
     section.conteudo {
         margin-top: 8em;
     }
-    .box {        
-        width: 35%;     
+
+    .box {
+        width: 35%;
     }
+
     a.linkprojects {
-        font-size: 13px;       
+        font-size: 13px;
     }
+
     .col-md-4 {
         flex: 0 0 auto;
         width: 100%;
@@ -603,20 +643,23 @@ section#contatos {
 }
 
 
-@media (min-width: 321px) and (max-width: 360px){
-    p.titulobanner {
+@media (min-width: 321px) and (max-width: 360px) {
+    .titulobanner {
         text-align: -webkit-center;
     }
 }
 
 
 @media screen and (max-width: 320px) {
-    p.titulobanner {
+    .titulobanner {
         text-align: -webkit-center;
     }
+
     .box {
         width: 44%;
+        font-size: 13px;
     }
+
     a.linkprojects {
         font-size: 10px;
     }
