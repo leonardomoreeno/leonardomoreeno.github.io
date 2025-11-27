@@ -408,95 +408,7 @@ section#contatos {
 /*FOOTER*/
 /*FOOTER*/
 
-@media screen and (max-width: 425px) {
-    .navbar-nav {
-        font-size: 25px;
-        padding-left: 2em;
-    }
 
-    div#navbarNavAltMarkup {
-        background-color: #192437;
-    }
-
-    img.logo {
-        width: 55%;
-    }
-
-    button.botaomenu {
-        margin-top: 32px;
-        display: none;
-    }
-
-    .box {
-        width: 35%;
-        font-size: 12px;
-    }
-
-    .titulosection.text-center {
-        margin-top: 25px;
-    }
-
-    .logo-lmr-slot img {
-        padding-top: 13px;
-        padding-left: 25px;
-        width: 80%;
-    }
-
-    button.botaobanner {
-        place-content: center;
-        width: 61%;
-        display: flex;
-    }
-
-    button.botaobanner:hover {
-        width: 61%;
-    }
-
-    a.cont {
-        text-align: -webkit-center;
-    }
-
-    img.fotobanner {
-        margin-top: 2rem;
-    }
-
-    .titulobanner {
-        padding-top: 2em;
-    }
-
-    section.conteudo {
-        margin-top: 3em;
-    }
-
-    .banner {
-        height: 588px;
-    }
-
-    .row.intro {
-        text-align-last: center;
-    }
-
-    a.linkprojects {
-        font-size: 13px;
-    }
-
-    .row.text-center.proj2 {
-        margin-top: 0rem;
-    }
-
-    .container-fluid {
-        text-align-last: center !important;
-        display: inline-block !important;
-    }
-
-    button.navbar-toggler {
-        display: none;
-    }
-
-    .content-replacement-justify {
-        place-content: center;
-    }
-}
 
 @media (min-width: 1441px) and (max-width: 1700px) {
     .navbar-nav {
@@ -649,10 +561,108 @@ section#contatos {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .navbar-nav {
+        font-size: 25px;
+        padding-left: 2em;
+    }
+
+    div#navbarNavAltMarkup {
+        background-color: #192437;
+    }
+
+    img.logo {
+        width: 55%;
+    }
+
+    button.botaomenu {
+        margin-top: 32px;
+        display: none;
+    }
+
+    .box {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    .titulosection.text-center {
+        margin-top: 25px;
+    }
+
+    .logo-lmr-slot img {
+        padding-top: 13px;
+        padding-left: 25px;
+        width: 80%;
+    }
+
+    button.botaobanner {
+        place-content: center;
+        width: 61%;
+        display: flex;
+    }
+
+    button.botaobanner:hover {
+        width: 61%;
+    }
+
+    a.cont {
+        text-align: -webkit-center;
+    }
+
+    img.fotobanner {
+        margin-top: 2rem;
+    }
+
+    .titulobanner {
+        padding-top: 2em;
+    }
+
+    section.conteudo {
+        margin-top: 3em;
+    }
+
+    .banner {
+        height: 588px;
+    }
+
+    .row.intro {
+        text-align-last: center;
+    }
+
+    a.linkprojects {
+        font-size: 13px;
+    }
+
+    .row.text-center.proj2 {
+        margin-top: 0rem;
+    }
+
+    .container-fluid {
+        text-align-last: center !important;
+        display: inline-block !important;
+    }
+
+    button.navbar-toggler {
+        display: none;
+    }
+
+    .content-replacement-justify {
+        place-content: center;
+    }
+
+    .sobremimtext {
+        font-size: 17px!important;
+    }
+}
+
 
 @media (min-width: 321px) and (max-width: 360px) {
     .titulobanner {
         text-align: -webkit-center;
+    }
+
+    .sobremimtext {
+        font-size: 17px;
     }
 }
 
@@ -669,5 +679,9 @@ section#contatos {
 
     a.linkprojects {
         font-size: 10px;
+    }
+
+    .sobremimtext {
+        font-size: 17px;
     }
 }
