@@ -210,12 +210,19 @@ p.sobremimtext {
     place-content: center;
 }
 
-a.linkprojects {
+.linkprojects {
     text-decoration: none;
     color: white;
     border: solid 1px #7ED957;
     padding: 11px;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.linkprojects:hover {
+    border: solid 1px #ffffff;
+    color: black;
+    background-color: white;
     transition: 0.3s;
 }
 
