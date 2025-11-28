@@ -83,6 +83,60 @@ button.botaomenu:hover {
 /* MENU */
 /* MENU */
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espaçamento entre os campos */
+    max-width: 400px;
+    margin: 0 auto; /* centraliza */
+}
+
+#contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#contact-form textarea {
+    height: 120px;
+}
+
+#contact-form button {
+    border: solid 2px #7ED957!important;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#contact-form button:hover {
+    background-color: #7ED957;
+    transition: 0.3s;
+    color: black;
+}
+
+#status {
+    font-size: 14px;
+}
+
+label {
+    color: #7ED957;
+}
 
 /* BANNER */
 /* BANNER */

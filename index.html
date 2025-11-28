@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#contatos">Contatos</a>
                     </div>
                 </div>
-                <a class="conta" href="https://wa.me/5561986569890" target="_blank"><button class="botaomenu">Entre em
+                <a class="conta" href="#contact-form"><button class="botaomenu">Entre em
                         contato</button></a>
             </div>
         </nav>
@@ -58,7 +58,7 @@
                         </h1>
                         <a class="cont" href="doc/cvLeonardoMoreno.pdf" target="_blank"><button
                                 class="botaobanner">Download CV</button></a>
-                        <a class="cont" href="https://wa.me/5561986569890" target="_blank"><button
+                        <a class="cont" href="#contact-form"><button
                                 class="botaobanner">Entre em
                                 contato</button></a>
                     </div>
@@ -285,35 +285,37 @@
     </section>
     <section id="contatos" class="conteudo">
         <div class="container">
-            <form id="contact-form">
-                <label>
-                    Nome:
-                    <input type="text" name="name" required />
-                </label>
-
-                <label>
-                    Email:
-                    <input type="email" name="email" required />
-                </label>
-
-                <label>
-                    Telefone (com DDD):
-                    <input type="tel" name="phone" placeholder="(11) 98765-4321" required />
-                </label>
-
-                <label>
-                    Mensagem:
-                    <textarea name="message" required></textarea>
-                </label>
-
-                <button type="submit">Enviar</button>
-
-                <p id="status"></p>
-            </form>
             <div class="row d-flex justify-content-center" data-aos="fade-right">
                 <p class="titulosection text-center">
                     Contato
                 </p>
+                <div class="row">
+                    <form id="contact-form">
+                        <label>
+                            Nome:
+                            <input type="text" name="name" required />
+                        </label>
+
+                        <label>
+                            Email:
+                            <input type="email" name="email" required />
+                        </label>
+
+                        <label>
+                            Telefone (com DDD):
+                            <input type="tel" name="phone" placeholder="(61) 99995-4321" required />
+                        </label>
+
+                        <label>
+                            Mensagem:
+                            <textarea name="message" placeholder="Motivo do contato..." required></textarea>
+                        </label>
+
+                        <button type="submit">Enviar</button>
+
+                        <p id="status"></p>
+                    </form>
+                </div>
                 <div class="row">
                     <div class="content-replacement-justify">
                         <div class="socialmedia-group">
@@ -331,61 +333,61 @@
     </section>
 </body>
 <script>
-  document.querySelector("#contact-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
+    document.querySelector("#contact-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-    const status = document.getElementById("status");
+        const status = document.getElementById("status");
 
-    const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value, // <-- telefone enviado
-      message: e.target.message.value
-    };
+        const data = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value, // <-- telefone enviado
+            message: e.target.message.value
+        };
 
-    try {
-      const res = await fetch("https://contact-api-seven-tau.vercel.app/api/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+        try {
+            const res = await fetch("https://contact-api-seven-tau.vercel.app/api/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
 
-      const result = await res.json();
+            const result = await res.json();
 
-      if (res.ok) {
-        status.innerText = "Mensagem enviada com sucesso!";
-        e.target.reset();
-      } else {
-        status.innerText = "Erro: " + result.error;
-      }
-    } catch (err) {
-      status.innerText = "Erro ao enviar. Tente novamente.";
-    }
-  });
+            if (res.ok) {
+                status.innerText = "Mensagem enviada com sucesso!";
+                e.target.reset();
+            } else {
+                status.innerText = "Erro: " + result.error;
+            }
+        } catch (err) {
+            status.innerText = "Erro ao enviar. Tente novamente.";
+        }
+    });
 </script>
 
 <script>
-       AOS.init();
+    AOS.init();
 
-       const image = document.querySelector('.fotobanner');
-       const container = document.querySelector('.image-container');
+    const image = document.querySelector('.fotobanner');
+    const container = document.querySelector('.image-container');
 
     container.addEventListener('mousemove', (e) => {
-        const {offsetX: x, offsetY: y } = e;
-       const {offsetWidth: w, offsetHeight: h } = container;
+        const { offsetX: x, offsetY: y } = e;
+        const { offsetWidth: w, offsetHeight: h } = container;
 
-       // Calcular o percentual do mouse em relação à imagem
-       const xPercent = (x / w) * 2 - 1; // Normalizado entre -1 e 1
-       const yPercent = (y / h) * 2 - 1; // Normalizado entre -1 e 1
+        // Calcular o percentual do mouse em relação à imagem
+        const xPercent = (x / w) * 2 - 1; // Normalizado entre -1 e 1
+        const yPercent = (y / h) * 2 - 1; // Normalizado entre -1 e 1
 
-       // Ajustar a transformação da imagem com base na posição do mouse
-       image.style.transform = `translate(${xPercent * 10}px, ${yPercent * 10}px)`;
+        // Ajustar a transformação da imagem com base na posição do mouse
+        image.style.transform = `translate(${xPercent * 10}px, ${yPercent * 10}px)`;
     });
 
     container.addEventListener('mouseleave', () => {
-           image.style.transform = 'translate(0, 0)';
+        image.style.transform = 'translate(0, 0)';
     });
 
 </script>
