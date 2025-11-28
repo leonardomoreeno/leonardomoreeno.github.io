@@ -79,10 +79,6 @@ button.botaomenu:hover {
     transition: 0.7s;
 }
 
-.bnz {
-    text-align: center;
-}
-
 /* MENU */
 /* MENU */
 /* MENU */
@@ -90,9 +86,11 @@ button.botaomenu:hover {
 #contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* espaçamento entre os campos */
+    gap: 15px;
+    /* espaçamento entre os campos */
     max-width: 400px;
-    margin: 0 auto; /* centraliza */
+    margin: 0 auto;
+    /* centraliza */
 }
 
 #contact-form label {
@@ -116,7 +114,7 @@ button.botaomenu:hover {
 }
 
 #contact-form button {
-    border: solid 2px #7ED957!important;
+    border: solid 2px #7ED957 !important;
     padding: 12px;
     background-color: #000;
     color: white;
@@ -617,6 +615,10 @@ section#contatos {
         flex: 0 0 auto;
         width: 100%;
     }
+
+    .bnz {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -709,7 +711,11 @@ section#contatos {
     }
 
     .sobremimtext {
-        font-size: 17px!important;
+        font-size: 17px !important;
+    }
+
+    .bnz {
+        text-align: center;
     }
 }
 
@@ -721,6 +727,10 @@ section#contatos {
 
     .sobremimtext {
         font-size: 17px;
+    }
+
+    .bnz {
+        text-align: center;
     }
 }
 
@@ -741,5 +751,9 @@ section#contatos {
 
     .sobremimtext {
         font-size: 17px;
+    }
+
+    .bnz {
+        text-align: center;
     }
 }
