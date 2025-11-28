@@ -132,6 +132,11 @@ button.botaomenu:hover {
     color: black;
 }
 
+#contact-form button:disabled {
+    background-color: #333 !important;
+    border-color: #555 !important;
+}
+
 #status {
     font-size: 14px;
 }

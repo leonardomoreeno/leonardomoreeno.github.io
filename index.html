@@ -58,8 +58,7 @@
                         </h1>
                         <a class="cont" href="doc/cvLeonardoMoreno.pdf" target="_blank"><button
                                 class="botaobanner">Download CV</button></a>
-                        <a class="cont" href="#contact-form"><button
-                                class="botaobanner">Entre em
+                        <a class="cont" href="#contact-form"><button class="botaobanner">Entre em
                                 contato</button></a>
                     </div>
                     <div class="col-md-6 imgleo">
@@ -308,7 +307,9 @@
 
                         <label>
                             Mensagem:
-                            <textarea name="message" placeholder="Motivo do contato... Exemplo: Quero expandir minhas vendas com uma landing page/ Quero melhorar a imagem do meu produto na internet/ Quero acompanhar os acessos que meu site ou landing page recebe por dia..." required></textarea>
+                            <textarea name="message"
+                                placeholder="Motivo do contato... Exemplo: Quero expandir minhas vendas com uma landing page/ Quero melhorar a imagem do meu produto na internet/ Quero acompanhar os acessos que meu site ou landing page recebe por dia..."
+                                required></textarea>
                         </label>
 
                         <button type="submit">Enviar</button>
@@ -337,11 +338,20 @@
         e.preventDefault();
 
         const status = document.getElementById("status");
+        const submitBtn = e.target.querySelector("button");
+
+        // Bloquear botão e mostrar carregamento
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = "0.6";
+        submitBtn.style.cursor = "not-allowed";
+
+        status.innerText = "Enviando seu contato...";
+        status.style.color = "#7ED957";
 
         const data = {
             name: e.target.name.value,
             email: e.target.email.value,
-            phone: e.target.phone.value, // <-- telefone enviado
+            phone: e.target.phone.value,
             message: e.target.message.value
         };
 
@@ -357,16 +367,26 @@
             const result = await res.json();
 
             if (res.ok) {
-                status.innerText = "Mensagem enviada com sucesso!";
+                status.innerText = "Mensagem enviada com sucesso! 👌";
+                status.style.color = "#7ED957";
+
                 e.target.reset();
             } else {
-                status.innerText = "Erro: " + result.error;
+                status.innerText = "Erro ao enviar: " + (result.error || "Tente novamente.");
+                status.style.color = "red";
             }
         } catch (err) {
-            status.innerText = "Erro ao enviar. Tente novamente.";
+            status.innerText = "Não foi possível enviar seu contato. Tente novamente mais tarde.";
+            status.style.color = "red";
         }
+
+        // Reabilitar botão após terminar
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = "1";
+        submitBtn.style.cursor = "pointer";
     });
 </script>
+
 
 <script>
     AOS.init();
