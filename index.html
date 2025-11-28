@@ -81,15 +81,18 @@
                         Desenvolvedor front-end desde 2018, especializado na criação de interfaces modernas, acessíveis
                         e orientadas à melhor experiência do usuário. Sou de Brasília, bacharel em Comunicação Social e
                         atualmente finalizo o curso de Análise e Desenvolvimento de Sistemas, uma formação que une
-                        visão estratégica, domínio técnico e compreensão do comportamento humano no ambiente digital.<br><br>
+                        visão estratégica, domínio técnico e compreensão do comportamento humano no ambiente
+                        digital.<br><br>
 
                         Nos últimos anos, expandi minha atuação para ciência de dados aplicada ao produto e marketing,
                         utilizando métricas e análises para apoiar decisões data-driven. Tenho experiência com Google
                         Analytics, Google Ads e implementação de estratégias baseadas em dados, ajudando a otimizar
-                        conversões, identificar padrões de uso e direcionar melhorias reais para produtos digitais.<br><br>
+                        conversões, identificar padrões de uso e direcionar melhorias reais para produtos
+                        digitais.<br><br>
 
                         Além da tecnologia, valorizo minha vida em família: sou casado e pai da Laura, de 2 anos. No
-                        tempo livre, gosto de jogar e assistir filmes e séries, especialmente do gênero suspense.<br><br>
+                        tempo livre, gosto de jogar e assistir filmes e séries, especialmente do gênero
+                        suspense.<br><br>
 
                         Seja bem-vindo! Estou sempre aberto a novos desafios e projetos onde posso unir desenvolvimento,
                         design, dados e estratégia para gerar impacto.
@@ -194,11 +197,13 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/cassipeloseubem.png"><br><br>
-                        <a class="linkprojects" href="https://hotsites.cassi.com.br/cassipeloseubem/index.html" target="_blank">CASSI Pelo Seu Bem</a>
+                        <a class="linkprojects" href="https://hotsites.cassi.com.br/cassipeloseubem/index.html"
+                            target="_blank">CASSI Pelo Seu Bem</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/relatorio2024.png"><br><br>
-                        <a class="linkprojects" href="https://hotsites.cassi.com.br/relatorio2024/index.html" target="_blank">Relatório Anual CASSI 2024</a>
+                        <a class="linkprojects" href="https://hotsites.cassi.com.br/relatorio2024/index.html"
+                            target="_blank">Relatório Anual CASSI 2024</a>
                     </div>
                     <div class="col-md-4">
                         <img class="iconproject" src="img/projetos/projeto5.png"><br><br>
@@ -280,6 +285,31 @@
     </section>
     <section id="contatos" class="conteudo">
         <div class="container">
+            <form id="contact-form">
+                <label>
+                    Nome:
+                    <input type="text" name="name" required />
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required />
+                </label>
+
+                <label>
+                    Telefone (com DDD):
+                    <input type="tel" name="phone" placeholder="(11) 98765-4321" required />
+                </label>
+
+                <label>
+                    Mensagem:
+                    <textarea name="message" required></textarea>
+                </label>
+
+                <button type="submit">Enviar</button>
+
+                <p id="status"></p>
+            </form>
             <div class="row d-flex justify-content-center" data-aos="fade-right">
                 <p class="titulosection text-center">
                     Contato
@@ -301,25 +331,61 @@
     </section>
 </body>
 <script>
-    AOS.init();
+  document.querySelector("#contact-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-    const image = document.querySelector('.fotobanner');
-    const container = document.querySelector('.image-container');
+    const status = document.getElementById("status");
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value, // <-- telefone enviado
+      message: e.target.message.value
+    };
+
+    try {
+      const res = await fetch("https://contact-api-seven-tau.vercel.app/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        status.innerText = "Mensagem enviada com sucesso!";
+        e.target.reset();
+      } else {
+        status.innerText = "Erro: " + result.error;
+      }
+    } catch (err) {
+      status.innerText = "Erro ao enviar. Tente novamente.";
+    }
+  });
+</script>
+
+<script>
+       AOS.init();
+
+       const image = document.querySelector('.fotobanner');
+       const container = document.querySelector('.image-container');
 
     container.addEventListener('mousemove', (e) => {
-        const { offsetX: x, offsetY: y } = e;
-        const { offsetWidth: w, offsetHeight: h } = container;
+        const {offsetX: x, offsetY: y } = e;
+       const {offsetWidth: w, offsetHeight: h } = container;
 
-        // Calcular o percentual do mouse em relação à imagem
-        const xPercent = (x / w) * 2 - 1; // Normalizado entre -1 e 1
-        const yPercent = (y / h) * 2 - 1; // Normalizado entre -1 e 1
+       // Calcular o percentual do mouse em relação à imagem
+       const xPercent = (x / w) * 2 - 1; // Normalizado entre -1 e 1
+       const yPercent = (y / h) * 2 - 1; // Normalizado entre -1 e 1
 
-        // Ajustar a transformação da imagem com base na posição do mouse
-        image.style.transform = `translate(${xPercent * 10}px, ${yPercent * 10}px)`;
+       // Ajustar a transformação da imagem com base na posição do mouse
+       image.style.transform = `translate(${xPercent * 10}px, ${yPercent * 10}px)`;
     });
 
     container.addEventListener('mouseleave', () => {
-        image.style.transform = 'translate(0, 0)';
+           image.style.transform = 'translate(0, 0)';
     });
 
 </script>
