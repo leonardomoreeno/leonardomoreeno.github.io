@@ -35,7 +35,7 @@ body {
     padding: 0 16%;
     height: 5.5em;
     box-shadow: 1px 1px 4px var(--color-dark4);
-    border-bottom: solid 1px #7ED957;
+    border-bottom: solid 5px #7ED957;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light {
