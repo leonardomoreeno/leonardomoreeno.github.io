@@ -79,6 +79,10 @@ button.botaomenu:hover {
     transition: 0.7s;
 }
 
+.linksbn {
+    display: block;
+}
+
 /* MENU */
 /* MENU */
 /* MENU */
@@ -624,6 +628,14 @@ section#contatos {
     .bnz {
         text-align: center;
     }
+
+    .row.linksbn {
+        text-align: center;
+    }
+
+    .botaobanner {
+        margin-top: 0px!important;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -682,8 +694,8 @@ section#contatos {
         padding-top: 2em;
     }
 
-    section.conteudo {
-        margin-top: 3em;
+    .conteudo {
+        margin-top: 6em;
     }
 
     .banner {
@@ -722,6 +734,14 @@ section#contatos {
     .bnz {
         text-align: center;
     }
+
+    .row.linksbn {
+        text-align: center;
+    }
+
+    .botaobanner {
+        margin-top: 0px!important;
+    }
 }
 
 
@@ -736,6 +756,14 @@ section#contatos {
 
     .bnz {
         text-align: center;
+    }
+
+    .row.linksbn {
+        text-align: center;
+    }
+
+    .botaobanner {
+        margin-top: 0px!important;
     }
 }
 
@@ -760,5 +788,13 @@ section#contatos {
 
     .bnz {
         text-align: center;
+    }
+
+    .row.linksbn {
+        text-align: center;
+    }
+
+    .botaobanner {
+        margin-top: 0px!important;
     }
 }
