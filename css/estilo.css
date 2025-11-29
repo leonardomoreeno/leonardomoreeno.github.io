@@ -253,10 +253,14 @@ body[data-aos-duration="400"] [data-aos] {
     transition-duration: .9s !important;
 }
 
-p.sobremimtext {
-    text-align: center;
+.sobremimtext {
+    text-align: justify;
     color: white;
     font-size: 27px;
+}
+
+.conhecimento {
+    margin-top: 1rem;
 }
 
 .cards {
@@ -634,7 +638,7 @@ section#contatos {
     }
 
     .botaobanner {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
     }
 }
 
@@ -740,7 +744,11 @@ section#contatos {
     }
 
     .botaobanner {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
+    }
+
+    .conhecimento {
+        margin-top: 1rem !important;
     }
 }
 
@@ -763,7 +771,11 @@ section#contatos {
     }
 
     .botaobanner {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
+    }
+
+    .conhecimento {
+        margin-top: 1rem !important;
     }
 }
 
@@ -795,6 +807,10 @@ section#contatos {
     }
 
     .botaobanner {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
+    }
+
+    .conhecimento {
+        margin-top: 1rem !important;
     }
 }
